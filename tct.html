@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const a={a :1,b:1}
+    function A1() {
+      return a
+    }
+    function A2() {
+      return a
+    }
+    function A3() {
+      return 1
+    }
+    function A4() {
+      return 111
+    }
+    const a1 = new A1()
+    const a2 = new A2()
+    const a3 = new A3()
+    const a4 = new A4()
+
+    console.log('a1',a1);
+    console.log('a2',a2);
+    console.log('a3',a3);
+    console.log('a4',a4);
+
+    function Book(name, numPages) { 
+     this.name = name; 
+     this.numPages = numPages; 
+     return
+    } 
+    const myBook = new Book('A Good Book', '500 pages'); 
+    console.log('mybook',myBook);
+    
+    function Movie(name, numMinutes) { 
+     return { name:name, numMinutes:numMinutes }; 
+    } 
+    const best = new Movie('Forrest Gump', '150'); 
+   
+
+    console.log('best',best);
+    
+    console.log(a1===a2);
+    console.log(a3==a4);
+  </script>
+</body>
+</html>
